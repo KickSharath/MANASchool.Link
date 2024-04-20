@@ -1,0 +1,187 @@
+body {
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	background: linear-gradient(-45deg, #b58e17, #a97f00, #ffd65b, #ffc107);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+    overflow-x: hidden;
+}
+.scale-animation {
+    transition: transform 0.2s ease-in-out;
+}
+.scale-animation:hover {
+    transform: scale(1.05);
+}
+.linkDesc{
+    font-weight: 500;
+    display: block;
+    color: #ffffff;
+    padding-top: 20px;
+    width: 60%;
+}
+
+.social-body {
+	display: flex;
+  }
+  .social-body .social-list {
+	list-style: none;
+	margin: 0 5px;
+	height: 50px;
+	width: 50px;
+	color: #000;
+	border: 2px solid #000;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	transition: all ease 0.3s;
+  }
+  
+  .social-body .social-list:hover {
+	color: #2c698d;
+	background: #ffdd00;
+	cursor: pointer;
+  }
+  
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+.shake {
+	animation: shake-animation 4.72s ease infinite;
+	transform-origin: 50% 50%;
+}
+@keyframes shake-animation {
+	0% { transform:translate(0,0) }
+	1.78571% { transform:translate(5px,0) }
+	3.57143% { transform:translate(0,0) }
+	5.35714% { transform:translate(5px,0) }
+	7.14286% { transform:translate(0,0) }
+	8.92857% { transform:translate(5px,0) }
+	10.71429% { transform:translate(0,0) }
+	100% { transform:translate(0,0) }
+}
+
+@media only screen and (max-width: 900px) {
+    .linkDesc{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 770px) {
+    .linkDesc{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .linkDesc{
+        width: 100%;
+    }
+}
+
+/* xxx */
+.scroll-parent {
+	position: relative;
+	width: 100vw;
+	height: 12rem;
+	padding: 2rem 0;
+	overflow: hidden;
+}
+
+.scroll-element {
+	width: 200%;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	animation: scroll 10s linear infinite;
+}
+
+.scroll-element img {
+	width: 150px;
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
+
+/* xxx1  KICKSharath*/
+.container_mouse {
+	text-align: center;
+	color: rgba(255, 255, 255, 0.918);
+	font-weight: bold;
+	text-transform: uppercase;
+  }
+  
+  .container_mouse .mouse-btn {
+	margin: auto;
+	width: 20px;
+	height: 40px;
+	border: 2px solid rgba(255, 255, 255, 0.918);
+	border-radius: 10px;
+	display: flex;
+	overflow: hidden;
+  }
+  
+  .container_mouse .mouse-btn .mouse-scroll {
+	display: block;
+	width: 10px;
+	height: 10px;
+	background: linear-gradient(170deg, rgba(255, 255, 255, 0.918), rgba(255, 255, 255));
+	border-radius: 50%;
+	margin: auto;
+	animation: scrolling 1s linear infinite;
+  }
+  
+  
+  @keyframes scrolling {
+	0% {
+	  opacity: 0;
+	  transform: translateY(-20px);
+	}
+  
+	100% {
+	  opacity: 1;
+	  transform: translateY(20px);
+	}
+  }
